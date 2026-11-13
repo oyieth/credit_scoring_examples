@@ -6,9 +6,13 @@ current_script_dir = Path(__file__).resolve().parent #location should de in src
 ROOT_DIR = current_script_dir.parent #repo location
 SCHEMA_DIR = ROOT_DIR / "schema"
 MODEL_DIR = ROOT_DIR / "models"
-METRICS_DIR = ROOT_DIR / "metrics"
 DATA_DIR = ROOT_DIR / "data"
 LOG_PATH = ROOT_DIR / "log.txt"
+
+# Naming convention
+#   notebooks -> each one states its own light model (model_nb) and sample size
+#   train/*.py -> the full pipeline on all the data
+PIPELINE_MODEL = "model_00"
 
 class ReadWritePaths:
     """
@@ -35,23 +39,6 @@ class ExtractPaths(ReadWritePaths):
             'bureau_balance_path': DATA_DIR / 'bureau_balance.csv',
             'train_all_features_path': DATA_DIR / 'application_train_all_features.csv',
             'test_all_features_path': DATA_DIR / 'application_test_all_features.csv',
-        }
-        self.__dict__.update(paths)
-
-
-class SplitPaths(ReadWritePaths):
-    """
-    Paths for the labeled train / holdout split (written by train/1b-split.py, read by step 2).
-    """
-
-    def __init__(self, name: str):
-        DIR = MODEL_DIR / f"{name}"
-        for item in ["data", "metrics"]:
-            Path(DIR / item).mkdir(parents=True, exist_ok=True)
-        paths = {
-            'train_raw_path': DIR / 'data' / f'train_{name}_raw.csv',
-            'test_raw_path': DIR / 'data' / f'test_{name}_raw.csv',
-            'split_report_path': DIR / 'metrics' / f'split_{name}.json',
         }
         self.__dict__.update(paths)
 
@@ -174,7 +161,7 @@ class WritePathsFeatureSelection(ReadWritePaths):
             Path(DIR / item).mkdir(parents=True, exist_ok=True)
         paths = {
             'data_schema_path': SCHEMA_DIR / 'data_schema.json',
-            'best_schema_path': DIR / 'schema' / f'data_schema_{name}_best_fts.json',
+            'best_schema_path': DIR / 'metrics' / f'data_schema_{name}_best_fts.json',
             'feature_importance_path': DIR / 'metrics' / f'feature_importance_{name}.csv',
             'final_feature_importance_path': DIR / 'metrics' / f'feature_importance_{name}_final_features.csv',
             'dropped_features_path': DIR / 'metrics' / f'drop_features_{name}.csv',

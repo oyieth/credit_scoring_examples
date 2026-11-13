@@ -1,0 +1,246 @@
+FEATURE,METRIC,VALUE,DETAIL
+AMT_GOODS_PRICE,CORRELATION,0.987117235355364,AMT_CREDIT
+APARTMENTS_MEDI,CORRELATION,0.9981979866523585,APARTMENTS_AVG/APARTMENTS_MODE
+APARTMENTS_MODE,CORRELATION,0.9876982374887353,APARTMENTS_AVG
+BASEMENTAREA_MEDI,CORRELATION,0.9983202662738139,BASEMENTAREA_AVG/BASEMENTAREA_MODE
+BASEMENTAREA_MODE,CORRELATION,0.989051332582207,BASEMENTAREA_AVG
+COMMONAREA_MEDI,CORRELATION,0.9975316312268853,COMMONAREA_AVG/COMMONAREA_MODE
+COMMONAREA_MODE,CORRELATION,0.9728881591141542,COMMONAREA_AVG
+ELEVATORS_MEDI,CORRELATION,0.9926580559744484,ELEVATORS_AVG/ELEVATORS_MODE
+ELEVATORS_MODE,CORRELATION,0.9805664058059647,ELEVATORS_AVG
+EMERGENCYSTATE_MODE,CORRELATION,0.9572771762065617,YEARS_BEGINEXPLUATATION_AVG/YEARS_BEGINEXPLUATATION_MODE/YEARS_BEGINEXPLUATATION_MEDI
+ENTRANCES_MEDI,CORRELATION,0.9984232678132233,ENTRANCES_AVG/ENTRANCES_MODE
+ENTRANCES_MODE,CORRELATION,0.9836505403424038,ENTRANCES_AVG
+FLAG_EMP_PHONE,CORRELATION,0.9998839313802019,DAYS_EMPLOYED
+FLOORSMAX_MEDI,CORRELATION,0.9983717315029451,FLOORSMAX_AVG/FLOORSMAX_MODE
+FLOORSMAX_MODE,CORRELATION,0.993474526946219,FLOORSMAX_AVG
+FLOORSMIN_MEDI,CORRELATION,0.9990908443392429,FLOORSMIN_AVG/FLOORSMIN_MODE
+FLOORSMIN_MODE,CORRELATION,0.9955157524037428,FLOORSMIN_AVG
+HOUSETYPE_MODE,CORRELATION,0.9101703664561648,YEARS_BEGINEXPLUATATION_AVG/YEARS_BEGINEXPLUATATION_MODE/YEARS_BEGINEXPLUATATION_MEDI
+LANDAREA_MEDI,CORRELATION,0.9984453955234237,LANDAREA_AVG/LANDAREA_MODE
+LANDAREA_MODE,CORRELATION,0.9772671652181942,LANDAREA_AVG
+LIVINGAPARTMENTS_MEDI,CORRELATION,0.9991793865954097,LIVINGAPARTMENTS_AVG/LIVINGAPARTMENTS_MODE
+LIVINGAPARTMENTS_MODE,CORRELATION,0.992285687625495,LIVINGAPARTMENTS_AVG
+LIVINGAREA_AVG,CORRELATION,0.9327350428041294,APARTMENTS_AVG/APARTMENTS_MODE/APARTMENTS_MEDI
+LIVINGAREA_MEDI,CORRELATION,0.9976814666757493,APARTMENTS_AVG/APARTMENTS_MODE/APARTMENTS_MEDI/LIVINGAREA_AVG/LIVINGAREA_MODE
+LIVINGAREA_MODE,CORRELATION,0.9838540993009994,APARTMENTS_AVG/APARTMENTS_MODE/APARTMENTS_MEDI/LIVINGAREA_AVG
+NONLIVINGAPARTMENTS_MEDI,CORRELATION,0.9969028891339281,NONLIVINGAPARTMENTS_AVG/NONLIVINGAPARTMENTS_MODE
+NONLIVINGAPARTMENTS_MODE,CORRELATION,0.9928447307405253,NONLIVINGAPARTMENTS_AVG
+NONLIVINGAREA_MEDI,CORRELATION,0.983791620222408,NONLIVINGAREA_AVG/NONLIVINGAREA_MODE
+NONLIVINGAREA_MODE,CORRELATION,0.9630284574059197,NONLIVINGAREA_AVG
+OBS_60_CNT_SOCIAL_CIRCLE,CORRELATION,0.9986813751175998,OBS_30_CNT_SOCIAL_CIRCLE
+REGION_RATING_CLIENT_W_CITY,CORRELATION,0.9514171446022843,REGION_RATING_CLIENT
+TOTALAREA_MODE,CORRELATION,0.9433219740936821,APARTMENTS_AVG/APARTMENTS_MODE/APARTMENTS_MEDI/LIVINGAREA_AVG/LIVINGAREA_MODE/LIVINGAREA_MEDI
+YEARS_BEGINEXPLUATATION_MEDI,CORRELATION,0.9998905596974355,YEARS_BEGINEXPLUATATION_AVG/YEARS_BEGINEXPLUATATION_MODE
+YEARS_BEGINEXPLUATATION_MODE,CORRELATION,0.9994188282752781,YEARS_BEGINEXPLUATATION_AVG
+YEARS_BUILD_MEDI,CORRELATION,0.9999563592149079,YEARS_BUILD_AVG/YEARS_BUILD_MODE
+YEARS_BUILD_MODE,CORRELATION,0.9996583537386752,YEARS_BUILD_AVG
+amt_annuity_median,CORRELATION,0.9519334688657106,amt_annuity_mean
+amt_credit_max,CORRELATION,0.9871486466449619,amt_application_max
+amt_credit_mean,CORRELATION,0.9761511080959512,amt_application_mean
+amt_credit_median,CORRELATION,0.9633855843125716,amt_application_median
+amt_credit_min,CORRELATION,0.9602587798829458,amt_application_min
+amt_down_payment_median,CORRELATION,0.9798665058906499,amt_down_payment_mean/amt_down_payment_min
+amt_down_payment_min,CORRELATION,0.9113118453944916,amt_down_payment_mean
+amt_goods_max,CORRELATION,1.0,amt_application_max/amt_credit_max
+amt_goods_mean,CORRELATION,0.9365552456581182,amt_application_mean/amt_credit_mean
+amt_goods_median,CORRELATION,0.914164238400823,amt_goods_mean
+cnt_payment_median,CORRELATION,0.9262282937763475,cnt_payment_mean
+days_termination_max,CORRELATION,0.9211687676621728,days_last_due_max
+days_termination_min,CORRELATION,0.9197356098893059,days_last_due_min
+down_payment_median,CORRELATION,0.9652984497857225,down_payment_mean
+first_day,CORRELATION,0.9883684011128524,days_decision_min
+first_payment,CORRELATION,0.9999485128685467,days_decision_min/first_day
+flag_cash,CORRELATION,0.9810423271579956,days_first_drawing_max
+flag_dpd_def_cc,CORRELATION,1.0,flag_dpd_cc
+latest_payment,CORRELATION,0.9982532924537282,latest_day
+max_amt_balance_cc,CORRELATION,0.918351222681247,mean_amt_balance_cc
+max_amt_limit_cc,CORRELATION,0.962244994118722,mean_amt_limit_cc
+max_drawings_pos_current_cc,CORRELATION,0.9593004772089999,max_drawings_current_cc
+max_installments_mature_cc,CORRELATION,0.9806957131442956,mean_installments_mature_cc
+max_min_installment_cc,CORRELATION,0.991707120242073,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc
+max_months_dpd_120,CORRELATION,0.9901082368004142,min_months_dpd_31/max_months_dpd_31/min_months_dpd_120
+max_months_dpd_31,CORRELATION,0.9405133502147933,min_months_dpd_31
+max_pay_pct_installment,CORRELATION,0.9989772061591322,mean_pay_pct_installment
+max_payment_total_cc,CORRELATION,0.999611101945679,max_payment_cc
+max_receivable_cc,CORRELATION,0.9999526413282356,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc/max_min_installment_cc/mean_receivable_principal_cc/max_receivable_principal_cc/mean_receivable_cc
+max_receivable_principal_cc,CORRELATION,0.9997010933134425,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc/max_min_installment_cc/mean_receivable_principal_cc
+max_receivable_total_cc,CORRELATION,0.9999998785029401,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc/max_min_installment_cc/mean_receivable_principal_cc/max_receivable_principal_cc/mean_receivable_cc/max_receivable_cc/mean_receivable_total_cc
+max_remaining_cash,CORRELATION,0.9993114342257606,max_prev_term_cash
+max_sum_overdue,CORRELATION,0.9248725695905282,mean_sum_overdue
+mean_down_payment,CORRELATION,1.0,down_payment_mean/down_payment_median
+mean_drawings_pos_current_cc,CORRELATION,0.9780229960826375,mean_drawings_current_cc
+mean_min_installment_cc,CORRELATION,0.989371972259274,mean_amt_balance_cc/max_amt_balance_cc
+mean_receivable_cc,CORRELATION,0.999978256703238,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc/max_min_installment_cc/mean_receivable_principal_cc/max_receivable_principal_cc
+mean_receivable_principal_cc,CORRELATION,0.9999055181322226,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc/max_min_installment_cc
+mean_receivable_total_cc,CORRELATION,0.9999999988049362,mean_amt_balance_cc/max_amt_balance_cc/mean_min_installment_cc/max_min_installment_cc/mean_receivable_principal_cc/max_receivable_principal_cc/mean_receivable_cc/max_receivable_cc
+median_sum_debt,CORRELATION,0.9037210262088687,min_sum_debt
+median_sum_overdue,CORRELATION,0.9944568256429249,mean_sum_overdue/min_sum_overdue
+min_amt_limit_cc,CORRELATION,0.9280834732829136,mean_amt_limit_cc
+min_days_ended,CORRELATION,0.9071143379529427,min_days_credits
+min_days_update,CORRELATION,0.9166985070156712,min_days_ended
+min_months_dpd_120,CORRELATION,0.9831270455759841,min_months_dpd_31/max_months_dpd_31
+min_receivable_cc,CORRELATION,0.9998169229454663,min_amt_balance_cc/min_receivable_principal_cc
+min_receivable_principal_cc,CORRELATION,0.9996881132269304,min_amt_balance_cc
+min_receivable_total_cc,CORRELATION,1.0,min_amt_balance_cc/min_receivable_principal_cc/min_receivable_cc
+min_sum_overdue,CORRELATION,0.9688064500196817,mean_sum_overdue
+n_closed_credits,CORRELATION,0.9288258410784671,n_total_credits
+n_credits_consumer,CORRELATION,0.9411701543287868,n_total_credits/n_closed_credits/n_credits_currency_1
+n_credits_currency_1,CORRELATION,0.9998763785241608,n_total_credits/n_closed_credits
+n_interest,CORRELATION,0.9846153992761648,rate_interested_primary_mean/rate_interested_primary_min/rate_interested_primary_max/rate_interested_primary_median/rate_intereseted_privileged_mean/rate_intereseted_privileged_min/rate_intereseted_privileged_max/rate_intereseted_privileged_median
+n_last_apply_contract,CORRELATION,0.9994579917843878,previous_applications/n_last_apply_day
+n_last_apply_day,CORRELATION,0.9995180031640782,previous_applications
+n_portfolio,CORRELATION,0.9388098994084345,n_types_applications
+number_status_cash,CORRELATION,0.9589030434297343,n_installments/total_prev_terms_cash
+rate_intereseted_privileged_max,CORRELATION,0.9999801927509018,rate_interested_primary_mean/rate_interested_primary_min/rate_interested_primary_max/rate_interested_primary_median/rate_intereseted_privileged_mean/rate_intereseted_privileged_min
+rate_intereseted_privileged_mean,CORRELATION,0.9996387894906996,rate_interested_primary_mean/rate_interested_primary_min/rate_interested_primary_max/rate_interested_primary_median
+rate_intereseted_privileged_median,CORRELATION,1.0,rate_interested_primary_mean/rate_interested_primary_min/rate_interested_primary_max/rate_interested_primary_median/rate_intereseted_privileged_mean/rate_intereseted_privileged_min/rate_intereseted_privileged_max
+rate_intereseted_privileged_min,CORRELATION,0.999980138036246,rate_interested_primary_mean/rate_interested_primary_min/rate_interested_primary_max/rate_interested_primary_median/rate_intereseted_privileged_mean
+rate_interested_primary_max,CORRELATION,0.9999784420403285,rate_interested_primary_mean/rate_interested_primary_min
+rate_interested_primary_median,CORRELATION,1.0,rate_interested_primary_mean/rate_interested_primary_min/rate_interested_primary_max
+rate_interested_primary_min,CORRELATION,0.999978380339139,rate_interested_primary_mean
+times_dpd_def_cash,CORRELATION,1.0,times_dpd_cash
+total_months_dpd_120,CORRELATION,0.994370588753642,total_months_dpd_31
+total_prev_terms_cash,CORRELATION,0.9351576404968434,n_installments
+min_amt_drawing_other_current_cc,VIF,inf,constant column
+min_drawings_other_current_cc,VIF,inf,constant column
+n_credits_currency_4,VIF,inf,constant column
+FLAG_MOBIL,VIF,inf,constant column
+FLAG_DOCUMENT_2,VIF,inf,constant column
+FLAG_DOCUMENT_10,VIF,inf,constant column
+FLAG_DOCUMENT_17,VIF,inf,constant column
+previous_applications,VIF,186.18351607978866,
+mean_payment_cc,VIF,88.15539653515553,
+amt_application_mean,VIF,44.43855347745041,
+down_payment_mean,VIF,34.7310899519825,
+n_installments,VIF,25.67624700753001,
+amt_annuity_mean,VIF,24.98841440751602,
+days_last_due_first_max,VIF,17.44574648396559,
+mean_sum_limit,VIF,15.33244718051159,
+FLAG_DOCUMENT_3,VIF,14.666392645845226,
+mean_payment_total_cc,VIF,14.462990657442687,
+max_months_dpd,VIF,13.85977455313752,
+cnt_payment_mean,VIF,13.724892458505959,
+mean_sum_debt,VIF,13.139642101185661,
+days_first_drawing_max,VIF,11.52890371962714,
+n_product_comb,VIF,10.927631795228077,
+mean_drawings_current_cc,VIF,10.784582663573763,
+APARTMENTS_AVG,VIF,10.376894957547014,
+total_months_cash,VIF,10.110326582366103,
+AMT_REQ_CREDIT_BUREAU_DAY,Forward selection: AUC,0.7374317454155485,
+AMT_REQ_CREDIT_BUREAU_HOUR,Forward selection: AUC,0.7377700987040576,
+FLAG_DOCUMENT_21,Forward selection: AUC,0.7323989920977233,
+FLAG_DOCUMENT_19,Forward selection: AUC,0.7282854685844546,
+FLAG_DOCUMENT_12,Forward selection: AUC,0.7318059547216618,
+FLAG_DOCUMENT_18,Forward selection: AUC,0.7316190221319561,
+FLAG_DOCUMENT_16,Forward selection: AUC,0.7289849883285757,
+FLAG_DOCUMENT_15,Forward selection: AUC,0.7278172219598147,
+FLAG_DOCUMENT_14,Forward selection: AUC,0.7314610342797059,
+FLAG_DOCUMENT_13,Forward selection: AUC,0.7370681145538074,
+NONLIVINGAREA_AVG,Forward selection: AUC,0.7347122962738546,
+REG_CITY_NOT_WORK_CITY,Forward selection: AUC,0.7329017794005039,
+NONLIVINGAPARTMENTS_AVG,Forward selection: AUC,0.7271050821398114,
+ELEVATORS_AVG,Forward selection: AUC,0.7337980953979464,
+COMMONAREA_AVG,Forward selection: AUC,0.7302984271514773,
+YEARS_BUILD_AVG,Forward selection: AUC,0.7267469427039466,
+YEARS_BEGINEXPLUATATION_AVG,Forward selection: AUC,0.7332509279796209,
+BASEMENTAREA_AVG,Forward selection: AUC,0.7316458429218426,
+LIVE_CITY_NOT_WORK_CITY,Forward selection: AUC,0.7336532578055847,
+ENTRANCES_AVG,Forward selection: AUC,0.7360123511272336,
+LIVINGAPARTMENTS_AVG,Forward selection: AUC,0.7307397144011302,
+LANDAREA_AVG,Forward selection: AUC,0.7295073929283012,
+FLOORSMIN_AVG,Forward selection: AUC,0.7294807596995596,
+FLOORSMAX_AVG,Forward selection: AUC,0.7353227142810834,
+max_sum_debt,Forward selection: AUC,0.7335566759291712,
+n_bad_credits,Forward selection: AUC,0.7287481836738278,
+total_prolong,Forward selection: AUC,0.7314156136239414,
+freq_client_type,Forward selection: AUC,0.7197297202154838,
+freq_reject,Forward selection: AUC,0.732528159485303,
+freq_payment_type,Forward selection: AUC,0.7298393374762571,
+freq_purpose,Forward selection: AUC,0.7319063115584674,
+freq_hour,Forward selection: AUC,0.7292879991002148,
+freq_contract_type,Forward selection: AUC,0.7265585906467503,
+n_insured_approval,Forward selection: AUC,0.7311376934578273,
+n_down_payment,Forward selection: AUC,0.7312574448430829,
+n_unused,Forward selection: AUC,0.7358909591666725,
+fred_suite,Forward selection: AUC,0.7357301422933376,
+freq_goods,Forward selection: AUC,0.727963618721826,
+min_amt_overdue,Forward selection: AUC,0.7274301977236773,
+freq_portfolio,Forward selection: AUC,0.7313615937103348,
+max_months_cash_cash,Forward selection: AUC,0.7288368976866119,
+min_months_cash,Forward selection: AUC,0.7269805641601719,
+times_unpayed,Forward selection: AUC,0.7353353184039703,
+times_unfullfilled,Forward selection: AUC,0.7288118472602936,
+max_installment,Forward selection: AUC,0.7313756321366489,
+latest_day,Forward selection: AUC,0.7307974603689008,
+min_installments,Forward selection: AUC,0.7266903115258941,
+max_installments,Forward selection: AUC,0.7287108689897455,
+freq_yield_group,Forward selection: AUC,0.7302218464911358,
+freq_industry,Forward selection: AUC,0.7302432720967384,
+freq_product,Forward selection: AUC,0.7301325879820304,
+days_last_due_first_min,Forward selection: AUC,0.7296815316696742,
+days_first_due_min,Forward selection: AUC,0.7321314415530196,
+days_first_drawing_min,Forward selection: AUC,0.7296183201429186,
+n_yield_groups,Forward selection: AUC,0.7240401191536121,
+n_seller_industry,Forward selection: AUC,0.7351127661271937,
+n_sellerplace_area,Forward selection: AUC,0.7377098311507133,
+n_channel_type,Forward selection: AUC,0.727255023433941,
+n_product_type,Forward selection: AUC,0.7349906471010226,
+n_goods_category,Forward selection: AUC,0.7325056873003816,
+n_client_type,Forward selection: AUC,0.72972136629865,
+n_suite,Forward selection: AUC,0.7261149632637534,
+n_payment_type,Forward selection: AUC,0.7231606943061587,
+n_status,Forward selection: AUC,0.7277271599712998,
+n_purpose,Forward selection: AUC,0.7301775246720943,
+n_hour_start,Forward selection: AUC,0.7282965856228889,
+n_weekdays,Forward selection: AUC,0.7282671382089986,
+amt_application_min,Forward selection: AUC,0.727860864572232,
+amt_application_max,Forward selection: AUC,0.7254307111643694,
+rate_interested_primary_mean,Forward selection: AUC,0.7312293542017612,
+down_payment_min,Forward selection: AUC,0.7326588106759754,
+amt_goods_min,Forward selection: AUC,0.7341179818902004,
+amt_down_payment_max,Forward selection: AUC,0.7271657434563629,
+min_prev_term_cash,Forward selection: AUC,0.7265757913965516,
+max_prev_term_cash,Forward selection: AUC,0.7307029755259222,
+n_total_credits,Forward selection: AUC,0.7230011423622188,
+latest_status_cc,Forward selection: AUC,0.7273857054135451,
+flag_dpd_cc,Forward selection: AUC,0.7313188343423029,
+total_dpd_def_cc,Forward selection: AUC,0.7254690867400855,
+total_dpd_cc,Forward selection: AUC,0.7263651436846237,
+min_installments_mature_cc,Forward selection: AUC,0.7275146423728508,
+mean_installments_mature_cc,Forward selection: AUC,0.7301558763179964,
+min_drawings_pos_current_cc,Forward selection: AUC,0.7297796589270434,
+max_drawings_other_current_cc,Forward selection: AUC,0.7249623347514668,
+mean_drawings_other_current_cc,Forward selection: AUC,0.7299024747535142,
+min_drawings_current_cc,Forward selection: AUC,0.7239086501712152,
+n_active_credits,Forward selection: AUC,0.7182532256193521,
+n_sold_credits,Forward selection: AUC,0.7270692732509157,
+n_credits_credit_card,Forward selection: AUC,0.7295889062756988,
+max_days_credit_overdue,Forward selection: AUC,0.7219545523616815,
+flag_credit_overdue,Forward selection: AUC,0.7318299525295624,
+min_days_credit_overdue,Forward selection: AUC,0.7329358844955506,
+freq_credit_type,Forward selection: AUC,0.7369764186225229,
+n_credits_other,Forward selection: AUC,0.7352774085776452,
+n_credits_car_loan,Forward selection: AUC,0.7336002773151391,
+n_types_applications,Forward selection: AUC,0.7298556709346682,
+freq_currency,Forward selection: AUC,0.7310891044394764,
+n_credits_currency_3,Forward selection: AUC,0.7276666053338582,
+n_credits_currency_2,Forward selection: AUC,0.7292891589911796,
+max_drawings_current_cc,Forward selection: AUC,0.7275986178922599,
+max_amt_drawing_other_current_cc,Forward selection: AUC,0.7314290053430589,
+mean_amt_drawing_other_current_cc,Forward selection: AUC,0.7323308468366694,
+min_amt_drawing_current_cc,Forward selection: AUC,0.7343135627137922,
+max_amt_drawing_current_cc,Forward selection: AUC,0.7327458594334371,
+mean_amt_drawing_current_cc,Forward selection: AUC,0.7304158577075602,
+mean_amt_limit_cc,Forward selection: AUC,0.7301514952834196,
+min_amt_balance_cc,Forward selection: AUC,0.7343157664263371,
+freq_latest_status_cash,Forward selection: AUC,0.7365235364078337,
+times_dpd_cash,Forward selection: AUC,0.7310103205902114,
+mean_amt_drawing_pos_current_cc,Forward selection: AUC,0.7254488853610498,
+max_amt_drawing_pos_current_cc,Forward selection: AUC,0.728143387997797,
+min_amt_drawing_pos_current_cc,Forward selection: AUC,0.7248611166623694,
+min_payment_total_cc,Forward selection: AUC,0.7290519830889399,
+min_payment_cc,Forward selection: AUC,0.7328171219167319,
+max_payment_cc,Forward selection: AUC,0.7274143828946962,
+min_min_installment_cc,Forward selection: AUC,0.7256311993317469,
+AMT_REQ_CREDIT_BUREAU_YEAR,Forward selection: AUC,0.7344784311940988,

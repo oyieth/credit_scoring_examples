@@ -1,0 +1,449 @@
+{
+    "freq_contract_type": {
+        "CONSUMER_LOANS": 0,
+        "CASH_LOANS": 1,
+        "ND": 2,
+        "REVOLVING_LOANS": 3
+    },
+    "freq_weekday": {
+        "SATURDAY": 0,
+        "WEDNESDAY": 1,
+        "MONDAY": 2,
+        "FRIDAY": 3,
+        "SUNDAY": 4,
+        "THURSDAY": 5,
+        "TUESDAY": 6,
+        "ND": 7
+    },
+    "freq_hour": {
+        "18": 0,
+        "16": 1,
+        "19": 2,
+        "12": 3,
+        "14": 4,
+        "17": 5,
+        "11": 6,
+        "9": 7,
+        "13": 8,
+        "15": 9,
+        "8": 10,
+        "6": 11,
+        "10": 12,
+        "7": 13,
+        "OTHER": 14,
+        "ND": 15
+    },
+    "freq_purpose": {
+        "ND": 0,
+        "XAP": 1,
+        "OTHER": 2,
+        "REPAIRS": 3
+    },
+    "freq_status": {
+        "UNUSED_OFFER": 0,
+        "APPROVED": 1,
+        "ND": 2,
+        "CANCELED": 3,
+        "REFUSED": 4
+    },
+    "freq_payment_type": {
+        "CASH_THROUGH_THE_BANK": 0,
+        "ND": 1,
+        "NON-CASH_FROM_YOUR_ACCOUNT": 2,
+        "CASHLESS_FROM_THE_ACCOUNT_OF_THE_EMPLOYER": 3
+    },
+    "freq_reject": {
+        "XAP": 0,
+        "HC": 1,
+        "ND": 2,
+        "OTHER": 3,
+        "LIMIT": 4
+    },
+    "fred_suite": {
+        "OTHER": 0,
+        "CHILDREN": 1,
+        "FAMILY": 2,
+        "OTHER_B": 3,
+        "UNACCOMPANIED": 4,
+        "SPOUSE,_PARTNER": 5,
+        "ND": 6
+    },
+    "freq_client_type": {
+        "XNA": 0,
+        "REFRESHED": 1,
+        "REPEATER": 2,
+        "NEW": 3,
+        "ND": 4
+    },
+    "freq_goods": {
+        "CLOTHING_AND_ACCESSORIES": 0,
+        "FURNITURE": 1,
+        "CONSUMER_ELECTRONICS": 2,
+        "CONSTRUCTION_MATERIALS": 3,
+        "OTHER": 4,
+        "COMPUTERS": 5,
+        "AUDIO/VIDEO": 6,
+        "PHOTO_/_CINEMA_EQUIPMENT": 7,
+        "ND": 8,
+        "MOBILE": 9
+    },
+    "freq_portfolio": {
+        "CARS": 0,
+        "POS": 1,
+        "CASH": 2,
+        "ND": 3,
+        "CARDS": 4
+    },
+    "freq_product": {
+        "X-SELL": 0,
+        "ND": 1,
+        "WALK-IN": 2
+    },
+    "freq_channel": {
+        "OTHER": 0,
+        "STONE": 1,
+        "CONTACT_CENTER": 2,
+        "REGIONAL_/_LOCAL": 3,
+        "CREDIT_AND_CASH_OFFICES": 4,
+        "COUNTRY-WIDE": 5,
+        "AP+_(CASH_LOAN)": 6,
+        "ND": 7
+    },
+    "freq_area": {
+        "50": 0,
+        "100": 1,
+        "20": 2,
+        "150": 3,
+        "OTHER": 4,
+        "-1": 5,
+        "30": 6,
+        "0": 7,
+        "ND": 8,
+        "200": 9,
+        "40": 10
+    },
+    "freq_industry": {
+        "CLOTHING": 0,
+        "FURNITURE": 1,
+        "CONSTRUCTION": 2,
+        "INDUSTRY": 3,
+        "CONSUMER_ELECTRONICS": 4,
+        "OTHER": 5,
+        "ND": 6,
+        "CONNECTIVITY": 7
+    },
+    "freq_yield_group": {
+        "LOW_ACTION": 0,
+        "LOW_NORMAL": 1,
+        "MIDDLE": 2,
+        "HIGH": 3,
+        "ND": 4
+    },
+    "fred_product_comb": {
+        "POS_INDUSTRY_WITH_INTEREST": 0,
+        "CASH_STREET:_LOW": 1,
+        "POS_OTHER_WITH_INTEREST": 2,
+        "CASH_X-SELL:_LOW": 3,
+        "CASH_X-SELL:_HIGH": 4,
+        "POS_HOUSEHOLD_WITHOUT_INTEREST": 5,
+        "CASH_X-SELL:_MIDDLE": 6,
+        "CARD_X-SELL": 7,
+        "POS_MOBILE_WITHOUT_INTEREST": 8,
+        "OTHER": 9,
+        "POS_HOUSEHOLD_WITH_INTEREST": 10,
+        "POS_MOBILE_WITH_INTEREST": 11,
+        "CASH_STREET:_HIGH": 12,
+        "ND": 13,
+        "CASH": 14,
+        "CASH_STREET:_MIDDLE": 15,
+        "CARD_STREET": 16
+    },
+    "freq_latest_status_cash": {
+        "APPROVED": 0,
+        "SIGNED": 1,
+        "ACTIVE": 2,
+        "COMPLETED": 3,
+        "ND": 4
+    },
+    "flag_cash": {
+        "1": 0,
+        "0": 1
+    },
+    "latest_status_cc": {
+        "COMPLETED": 0,
+        "ND": 1,
+        "ACTIVE": 2
+    },
+    "freq_active": {
+        "SOLD": 0,
+        "CLOSED": 1,
+        "ACTIVE": 2,
+        "ND": 3
+    },
+    "freq_currency": {
+        "CURRENCY_2": 0,
+        "CURRENCY_1": 1,
+        "ND": 2
+    },
+    "freq_credit_type": {
+        "CAR_LOAN": 0,
+        "CONSUMER_CREDIT": 1,
+        "ND": 2,
+        "CREDIT_CARD": 3,
+        "OTHER": 4
+    },
+    "flag_credit_overdue": {
+        "0": 0,
+        "1": 1
+    },
+    "NAME_CONTRACT_TYPE": {
+        "REVOLVING_LOANS": 0,
+        "CASH_LOANS": 1
+    },
+    "CODE_GENDER": {
+        "F": 0,
+        "M": 1
+    },
+    "FLAG_OWN_CAR": {
+        "Y": 0,
+        "N": 1
+    },
+    "FLAG_OWN_REALTY": {
+        "Y": 0,
+        "N": 1
+    },
+    "NAME_TYPE_SUITE": {
+        "FAMILY": 0,
+        "SPOUSE,_PARTNER": 1,
+        "UNACCOMPANIED": 2,
+        "OTHER": 3
+    },
+    "NAME_INCOME_TYPE": {
+        "OTHER": 0,
+        "STATE_SERVANT": 1,
+        "PENSIONER": 2,
+        "COMMERCIAL_ASSOCIATE": 3,
+        "WORKING": 4
+    },
+    "NAME_EDUCATION_TYPE": {
+        "ACADEMIC_DEGREE": 0,
+        "HIGHER_EDUCATION": 1,
+        "LOWER_SECONDARY": 2,
+        "INCOMPLETE_HIGHER": 3,
+        "SECONDARY_/_SECONDARY_SPECIAL": 4
+    },
+    "NAME_FAMILY_STATUS": {
+        "WIDOW": 0,
+        "MARRIED": 1,
+        "SEPARATED": 2,
+        "CIVIL_MARRIAGE": 3,
+        "SINGLE_/_NOT_MARRIED": 4
+    },
+    "NAME_HOUSING_TYPE": {
+        "OTHER": 0,
+        "HOUSE_/_APARTMENT": 1,
+        "MUNICIPAL_APARTMENT": 2,
+        "WITH_PARENTS": 3,
+        "RENTED_APARTMENT": 4
+    },
+    "FLAG_MOBIL": {
+        "1": 0
+    },
+    "FLAG_EMP_PHONE": {
+        "0": 0,
+        "1": 1
+    },
+    "FLAG_WORK_PHONE": {
+        "0": 0,
+        "1": 1
+    },
+    "FLAG_CONT_MOBILE": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_PHONE": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_EMAIL": {
+        "1": 0,
+        "0": 1
+    },
+    "OCCUPATION_TYPE": {
+        "MEDICINE_STAFF": 0,
+        "ACCOUNTANTS": 1,
+        "CORE_STAFF": 2,
+        "CLEANING_STAFF": 3,
+        "ND": 4,
+        "MANAGERS": 5,
+        "HIGH_SKILL_TECH_STAFF": 6,
+        "COOKING_STAFF": 7,
+        "SALES_STAFF": 8,
+        "LABORERS": 9,
+        "SECURITY_STAFF": 10,
+        "OTHER": 11,
+        "DRIVERS": 12
+    },
+    "REGION_RATING_CLIENT": {
+        "1": 0,
+        "2": 1,
+        "3": 2
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+        "1": 0,
+        "2": 1,
+        "3": 2
+    },
+    "WEEKDAY_APPR_PROCESS_START": {
+        "SUNDAY": 0,
+        "FRIDAY": 1,
+        "SATURDAY": 2,
+        "MONDAY": 3,
+        "WEDNESDAY": 4,
+        "THURSDAY": 5,
+        "TUESDAY": 6
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+        "1": 0,
+        "0": 1
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+        "0": 0,
+        "1": 1
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+        "0": 0,
+        "1": 1
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+        "0": 0,
+        "1": 1
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+        "0": 0,
+        "1": 1
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+        "0": 0,
+        "1": 1
+    },
+    "ORGANIZATION_TYPE": {
+        "XNA": 0,
+        "MEDICINE": 1,
+        "SCHOOL": 2,
+        "TRADE:_TYPE_3": 3,
+        "OTHER": 4,
+        "BUSINESS_ENTITY_TYPE_3": 5,
+        "KINDERGARTEN": 6,
+        "BUSINESS_ENTITY_TYPE_1": 7,
+        "BUSINESS_ENTITY_TYPE_2": 8,
+        "SELF-EMPLOYED": 9,
+        "TRANSPORT:_TYPE_4": 10,
+        "GOVERNMENT": 11,
+        "TRADE:_TYPE_7": 12,
+        "CONSTRUCTION": 13
+    },
+    "FONDKAPREMONT_MODE": {
+        "ORG_SPEC_ACCOUNT": 0,
+        "REG_OPER_SPEC_ACCOUNT": 1,
+        "REG_OPER_ACCOUNT": 2,
+        "ND": 3,
+        "NOT_SPECIFIED": 4
+    },
+    "HOUSETYPE_MODE": {
+        "TERRACED_HOUSE": 0,
+        "BLOCK_OF_FLATS": 1,
+        "ND": 2,
+        "SPECIFIC_HOUSING": 3
+    },
+    "WALLSMATERIAL_MODE": {
+        "WOODEN": 0,
+        "PANEL": 1,
+        "BLOCK": 2,
+        "STONE,_BRICK": 3,
+        "ND": 4,
+        "OTHER": 5
+    },
+    "EMERGENCYSTATE_MODE": {
+        "YES": 0,
+        "NO": 1,
+        "ND": 2
+    },
+    "FLAG_DOCUMENT_2": {
+        "0": 0
+    },
+    "FLAG_DOCUMENT_3": {
+        "0": 0,
+        "1": 1
+    },
+    "FLAG_DOCUMENT_4": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_5": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_6": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_7": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_8": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_9": {
+        "0": 0,
+        "1": 1
+    },
+    "FLAG_DOCUMENT_10": {
+        "0": 0
+    },
+    "FLAG_DOCUMENT_11": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_12": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_13": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_14": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_15": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_16": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_17": {
+        "0": 0
+    },
+    "FLAG_DOCUMENT_18": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_19": {
+        "0": 0,
+        "1": 1
+    },
+    "FLAG_DOCUMENT_20": {
+        "1": 0,
+        "0": 1
+    },
+    "FLAG_DOCUMENT_21": {
+        "0": 0,
+        "1": 1
+    }
+}

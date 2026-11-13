@@ -1,0 +1,2096 @@
+{
+    "previous_applications": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_types_applications": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_weekdays": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_hour_start": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_purpose": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_status": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_payment_type": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_code_rejection": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_suite": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_client_type": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_goods_category": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_portfolio": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_product_type": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_channel_type": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_sellerplace_area": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_seller_industry": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_yield_groups": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_product_comb": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_annuity_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_annuity_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_annuity_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_annuity_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_application_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_application_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_application_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_application_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_credit_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_credit_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_credit_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_credit_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_down_payment_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_down_payment_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_down_payment_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_down_payment_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_goods_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_goods_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_goods_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "amt_goods_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "cnt_payment_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "cnt_payment_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "cnt_payment_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "cnt_payment_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "down_payment_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "down_payment_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "down_payment_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "down_payment_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_interested_primary_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_interested_primary_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_interested_primary_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_interested_primary_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_intereseted_privileged_mean": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_intereseted_privileged_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_intereseted_privileged_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "rate_intereseted_privileged_median": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "days_decision_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_decision_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_first_drawing_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_first_drawing_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_first_due_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_first_due_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_last_due_first_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_last_due_first_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_last_due_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_last_due_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_termination_min": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "days_termination_max": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "mean_down_payment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "n_canceled": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_refused": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_unused": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_down_payment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_interest": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_last_apply_day": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_insured_approval": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_last_apply_contract": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "freq_contract_type": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_weekday": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_hour": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_purpose": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_status": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_payment_type": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_reject": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "fred_suite": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_client_type": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_goods": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_portfolio": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_product": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_channel": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_area": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_industry": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "freq_yield_group": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "fred_product_comb": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "n_installments": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_installments": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_installments": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "latest_day": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "first_day": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "latest_payment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "first_payment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "max_installment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_installment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_installment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_pay_pct_installment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_pay_pct_installment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_pay_pct_installment": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "times_unfullfilled": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "times_unpayed": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_months_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_months_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_months_cash_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_prev_terms_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_prev_term_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_prev_term_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_remaining_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "number_status_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_dpd_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "times_dpd_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "times_dpd_def_cash": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "freq_latest_status_cash": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "flag_cash": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "mean_amt_balance_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_amt_balance_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_amt_balance_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_amt_limit_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_amt_limit_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_amt_limit_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_amt_drawing_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_amt_drawing_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_amt_drawing_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_amt_drawing_other_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_amt_drawing_other_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_amt_drawing_other_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_amt_drawing_pos_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_amt_drawing_pos_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_amt_drawing_pos_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_min_installment_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_min_installment_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_min_installment_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_payment_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_payment_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_payment_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_payment_total_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_payment_total_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_payment_total_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_receivable_principal_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_receivable_principal_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_receivable_principal_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_receivable_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_receivable_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_receivable_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_receivable_total_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_receivable_total_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_receivable_total_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_drawings_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_drawings_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_drawings_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_drawings_other_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_drawings_other_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_drawings_other_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_drawings_pos_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_drawings_pos_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_drawings_pos_current_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_installments_mature_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_installments_mature_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_installments_mature_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_dpd_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_dpd_def_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "flag_dpd_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "flag_dpd_def_cc": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "latest_status_cc": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "n_total_credits": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_active_credits": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_closed_credits": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_sold_credits": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_bad_credits": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "freq_active": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_currency_1": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_currency_2": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_currency_3": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_currency_4": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "freq_currency": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_consumer": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_car_loan": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_credit_card": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_credits_other": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "freq_credit_type": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "min_days_credits": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "max_days_credit": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "min_days_credit_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "flag_credit_overdue": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "max_days_credit_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_days_duration": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "max_days_duration": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "min_days_ended": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "max_days_ended": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "min_amt_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_amt_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_days_update": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "max_days_update": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "total_prolong": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_sum_debt": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_sum_debt": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_sum_debt": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "median_sum_debt": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_sum_limit": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_sum_limit": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_sum_limit": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "median_sum_limit": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_sum_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_sum_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_sum_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "median_sum_overdue": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "mean_annuity": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_annuity": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_annuity": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "median_annuity": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "n_cancelled": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "tota_months_balance": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_months_balance": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_months_balance": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_months_dpd": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_months_dpd": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_months_dpd": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_months_dpd_31": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_months_dpd_31": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_months_dpd_31": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "total_months_dpd_120": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "min_months_dpd_120": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "max_months_dpd_120": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "NAME_CONTRACT_TYPE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "CODE_GENDER": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "FLAG_OWN_CAR": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "FLAG_OWN_REALTY": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "CNT_CHILDREN": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_INCOME_TOTAL": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_CREDIT": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_ANNUITY": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_GOODS_PRICE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "NAME_TYPE_SUITE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "NAME_INCOME_TYPE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "NAME_EDUCATION_TYPE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "NAME_FAMILY_STATUS": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "NAME_HOUSING_TYPE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "REGION_POPULATION_RELATIVE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "DAYS_BIRTH": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "DAYS_EMPLOYED": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "DAYS_REGISTRATION": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "DAYS_ID_PUBLISH": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "OWN_CAR_AGE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "FLAG_MOBIL": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_EMP_PHONE": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_WORK_PHONE": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_CONT_MOBILE": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_PHONE": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_EMAIL": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "OCCUPATION_TYPE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "CNT_FAM_MEMBERS": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[1.0, null]",
+        "data_source": "categorical"
+    },
+    "REGION_RATING_CLIENT": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "WEEKDAY_APPR_PROCESS_START": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "HOUR_APPR_PROCESS_START": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 23.0]",
+        "data_source": "categorical"
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ORGANIZATION_TYPE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "EXT_SOURCE_1": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "EXT_SOURCE_2": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "EXT_SOURCE_3": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "APARTMENTS_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "APARTMENTS_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "APARTMENTS_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "BASEMENTAREA_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "BASEMENTAREA_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "BASEMENTAREA_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "YEARS_BUILD_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "YEARS_BUILD_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "YEARS_BUILD_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "COMMONAREA_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "COMMONAREA_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "COMMONAREA_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ELEVATORS_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ELEVATORS_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ELEVATORS_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ENTRANCES_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ENTRANCES_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "ENTRANCES_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLOORSMAX_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLOORSMAX_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLOORSMAX_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLOORSMIN_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLOORSMIN_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLOORSMIN_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LANDAREA_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LANDAREA_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LANDAREA_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVINGAPARTMENTS_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVINGAPARTMENTS_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVINGAREA_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVINGAREA_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "LIVINGAREA_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "NONLIVINGAREA_AVG": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "NONLIVINGAREA_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "NONLIVINGAREA_MEDI": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FONDKAPREMONT_MODE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "HOUSETYPE_MODE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "TOTALAREA_MODE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "WALLSMATERIAL_MODE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "EMERGENCYSTATE_MODE": {
+        "type": "categorical",
+        "impute_value": "ND",
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[null, null]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_2": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_3": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_4": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_5": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_6": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_7": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_8": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_9": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_10": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_11": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_12": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_13": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_14": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_15": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_16": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_17": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_18": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_19": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_20": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "FLAG_DOCUMENT_21": {
+        "type": "categorical",
+        "impute_value": 0,
+        "range": "[0.0, 1.0]",
+        "data_source": "categorical"
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+        "type": "numeric",
+        "impute_value": 0,
+        "range": "[0.0, null]",
+        "data_source": "categorical"
+    }
+}

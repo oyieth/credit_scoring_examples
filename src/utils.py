@@ -11,6 +11,8 @@ from sklearn.metrics import (
     precision_recall_curve, log_loss)
 import optuna
 
+from src.model_paths import SCHEMA_DIR
+
 def correlations(df, do_not_consider, ax = None):
     """
     Triangular correlation plot for df.
@@ -186,7 +188,44 @@ def is_jsonable(x):
         return True
     except (TypeError, OverflowError):
         return False
-def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits):
+
+_INT_PARAMS = {"num_parallel_tree", "max_depth"}
+
+# XGBoost is tuned in two stages: tree structure first, then boosting / regularization.
+_XGB_STAGE_PARAMS = {
+    1: ["booster", "num_parallel_tree", "max_depth", "min_child_weight", "gamma",
+        "max_delta_step", "subsample", "colsample_bytree", "colsample_bylevel"],
+    2: ["learning_rate", "reg_alpha", "reg_lambda", "scale_pos_weight"],
+}
+_XGB_DEFAULTS = {
+    "booster": "gbtree", "num_parallel_tree": 1, "max_depth": 6, "min_child_weight": 1.0,
+    "gamma": 0.0, "max_delta_step": 0.0, "subsample": 1.0, "colsample_bytree": 1.0,
+    "colsample_bylevel": 1.0, "learning_rate": 0.1, "reg_alpha": 0.0, "reg_lambda": 1.0,
+    "scale_pos_weight": 1.0,
+}
+
+
+def load_param_grid(model_key, path=None):
+    """Search-space definition for `model_key` ('xgb', 'cat' or 'lgb') from schema/param_grid.json."""
+    path = path or SCHEMA_DIR / "param_grid.json"
+    with open(path, "r", encoding="utf-8") as file:
+        grids = json.load(file)
+    if model_key not in grids:
+        raise KeyError(f"No '{model_key}' section in {path}; available: {list(grids)}")
+    return grids[model_key]
+
+
+def _suggest_from_grid(trial, name, spec):
+    """trial.suggest_* for one entry of the param grid ({low, high, step, log} or a list of choices)."""
+    if isinstance(spec, list):
+        return trial.suggest_categorical(name, spec)
+    if name in _INT_PARAMS:
+        return trial.suggest_int(name, int(spec["low"]), int(spec["high"]), step=int(spec.get("step") or 1))
+    return trial.suggest_float(name, spec["low"], spec["high"],
+                               step=spec.get("step"), log=bool(spec.get("log")))
+
+
+def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits, random_state=None, trial=None):
     """
     Shared CV loop for the Optuna objective functions below.
 
@@ -209,7 +248,7 @@ def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits):
         Mean validation AUC across folds, or 0.5 if train/valid AUC diverge by
         more than `tol` (relative), signaling overfitting.
     """
-    skf = StratifiedKFold(n_splits=n_splits)
+    skf = StratifiedKFold(n_splits=n_splits, shuffle=random_state is not None, random_state=random_state)
     cv_results = {
         f'{metric}_train': [],
         'logloss_train': [],
@@ -217,7 +256,7 @@ def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits):
         'logloss_valid': []
     }
 
-    for train_index, valid_index in skf.split(X, y):
+    for fold, (train_index, valid_index) in enumerate(skf.split(X, y)):
         X_train, X_valid = X.iloc[train_index], X.iloc[valid_index]
         y_train, y_valid = y.iloc[train_index], y.iloc[valid_index]
 
@@ -228,6 +267,11 @@ def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits):
         cv_results[f'{metric}_valid'].append(roc_auc_score(y_valid, preds_valid))
         cv_results['logloss_valid'].append(log_loss(y_valid, preds_valid))
 
+        if trial is not None:  # fold-level pruning: report the running mean validation score
+            trial.report(float(np.mean(cv_results[f'{metric}_valid'])), step=fold)
+            if trial.should_prune():
+                raise optuna.TrialPruned()
+
     metric_train = np.mean(cv_results[f'{metric}_train'])
     metric_valid = np.mean(cv_results[f'{metric}_valid'])
     metric_diff = metric_train / metric_valid - 1
@@ -235,11 +279,12 @@ def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits):
     loss_train = np.mean(cv_results['logloss_train'])
     loss_valid = np.mean(cv_results['logloss_valid'])
 
-    print('Finished!')
-    print(f'Train {metric}: {metric_train}')
-    print(f'Valid {metric}: {metric_valid}')
-    print(f'Train Loss: {loss_train}')
-    print(f'Valid Loss: {loss_valid}')
+    if trial is None:  # inside a study the trial table already has this
+        print('Finished!')
+        print(f'Train {metric}: {metric_train}')
+        print(f'Valid {metric}: {metric_valid}')
+        print(f'Train Loss: {loss_train}')
+        print(f'Valid Loss: {loss_valid}')
 
     if metric_diff > tol:
         metric_valid = 0.5
@@ -247,150 +292,61 @@ def _cv_score_with_overfit_guard(fit_predict_fn, X, y, metric, tol, n_splits):
     return metric_valid
 
 def optuna_optimizer_xgb_classifier(
-    trial, X, y, metric='auc', tol=0.1, random_state=1000, n_splits=4
+    trial, X, y, metric='auc', tol=0.1, random_state=1000, n_splits=4,
+    base_params=None, stage=None, n_estimators_max=2000, early_stopping_rounds=100
 ):
     """
-    Function to optimize hyperparameter searching with OPTUNA - XGBoost.
+    Optuna objective for an XGBoost classifier: mean validation AUC (to be MAXIMIZED).
 
-    Parameters:
-    -----------
-    trial : optuna.trial.Trial
-        Optuna trial object.
-    X : pd.DataFrame
-        Feature set.
-    y : pd.Series or np.array
-        Target variable.
-    metric : str, optional (default='auc')
-        Metric for evaluation.
-    tol : float, optional (default=0.1)
-        Tolerance level for metric difference.
-    random_state : int, optional (default=1000)
-        Random state for reproducibility.
-    n_splits : int, optional (default=4)
-        Number of splits for cross-validation.
+    The search space comes from schema/param_grid.json ("xgb").
 
-    Returns:
-    --------
+    Parameters
+    ----------
+    base_params : dict, optional
+        Parameters held fixed (e.g. the best of stage 1 while tuning stage 2).
+    stage : {1, 2, None}
+        1 = tree structure, 2 = boosting / regularization, None = everything in one study.
+    n_estimators_max, early_stopping_rounds :
+        Each fold trains up to `n_estimators_max` rounds with early stopping on the validation
+        fold; the mean best number of rounds is stored on the trial as user attr `n_estimators`.
+
+    Returns
+    -------
     float
-        The evaluation metric score for the validation set.
+        Mean validation AUC across folds (0.5 if the train/valid gap exceeds `tol`).
     """
-    with open("schemas/param_grid.json", 'r', encoding='utf-8') as file:
-        param_dict = json.load(file)["xgb"]
+    grid = load_param_grid("xgb")
+    stages = [1, 2] if stage is None else [stage]
+    params = {**_XGB_DEFAULTS, **(base_params or {})}
+    for stage_ in stages:
+        for name in _XGB_STAGE_PARAMS[stage_]:
+            params[name] = _suggest_from_grid(trial, name, grid[name])
 
     param_grid = {
-        "objective": param_dict["objective"],
-        'random_state': random_state,
-        'booster': trial.suggest_categorical("booster", choices=param_dict["booster"]),
-        'num_parallel_tree': trial.suggest_int(
-            'num_parallel_tree',
-            low=param_dict["num_parallel_tree"]["low"],
-            high=param_dict["num_parallel_tree"]["high"],
-            step=param_dict["num_parallel_tree"]["step"],
-            log=param_dict["num_parallel_tree"]["log"]
-        ),
+        **params,
+        "objective": grid.get("objective", "binary:logistic"),
         "eval_metric": metric,
-        'max_depth': trial.suggest_int(
-            'max_depth',
-            low=param_dict["max_depth"]["low"],
-            high=param_dict["max_depth"]["high"],
-            step=param_dict["max_depth"]["step"],
-            log=param_dict["max_depth"]["log"]
-        ),
-        'learning_rate': trial.suggest_float(
-            'learning_rate',
-            low=param_dict["learning_rate"]["low"],
-            high=param_dict["learning_rate"]["high"],
-            step=param_dict["learning_rate"]["step"],
-            log=param_dict["learning_rate"]["log"]
-        ),
-        'gamma': trial.suggest_float(
-            'gamma',
-            low=param_dict["gamma"]["low"],
-            high=param_dict["gamma"]["high"],
-            step=param_dict["gamma"]["step"],
-            log=param_dict["gamma"]["log"]
-        ),
-        'min_child_weight': trial.suggest_float(
-            'min_child_weight',
-            low=param_dict["min_child_weight"]["low"],
-            high=param_dict["min_child_weight"]["high"],
-            step=param_dict["min_child_weight"]["step"],
-            log=param_dict["min_child_weight"]["log"]
-        ),
-        'max_delta_step': trial.suggest_float(
-            'max_delta_step',
-            low=param_dict["max_delta_step"]["low"],
-            high=param_dict["max_delta_step"]["high"],
-            step=param_dict["max_delta_step"]["step"],
-            log=param_dict["max_delta_step"]["log"]
-        ),
-        'subsample': trial.suggest_float(
-            'subsample',
-            low=param_dict["subsample"]["low"],
-            high=param_dict["subsample"]["high"],
-            step=param_dict["subsample"]["step"],
-            log=param_dict["subsample"]["log"]
-        ),
-        'colsample_bytree': trial.suggest_float(
-            'colsample_bytree',
-            low=param_dict["colsample_bytree"]["low"],
-            high=param_dict["colsample_bytree"]["high"],
-            step=param_dict["colsample_bytree"]["step"],
-            log=param_dict["colsample_bytree"]["log"]
-        ),
-        'colsample_bylevel': trial.suggest_float(
-            'colsample_bylevel',
-            low=param_dict["colsample_bylevel"]["low"],
-            high=param_dict["colsample_bylevel"]["high"],
-            step=param_dict["colsample_bylevel"]["step"],
-            log=param_dict["colsample_bylevel"]["log"]
-        ),
-        'reg_alpha': trial.suggest_float(
-            'reg_alpha',
-            low=param_dict["reg_alpha"]["low"],
-            high=param_dict["reg_alpha"]["high"],
-            step=param_dict["reg_alpha"]["step"],
-            log=param_dict["reg_alpha"]["log"]
-        ),
-        'reg_lambda': trial.suggest_float(
-            'reg_lambda',
-            low=param_dict["reg_lambda"]["low"],
-            high=param_dict["reg_lambda"]["high"],
-            step=param_dict["reg_lambda"]["step"],
-            log=param_dict["reg_lambda"]["log"]
-        ),
-        'scale_pos_weight': trial.suggest_float(
-            'scale_pos_weight',
-            low=param_dict["scale_pos_weight"]["low"],
-            high=param_dict["scale_pos_weight"]["high"],
-            step=param_dict["scale_pos_weight"]["step"],
-            log=param_dict["scale_pos_weight"]["log"]
-        ),
-        'n_jobs': param_dict["n_jobs"]
+        "seed": random_state,
+        "n_jobs": grid.get("n_jobs", -1),
     }
 
-    print("*" * 100)
-    print(param_grid)
-    print("*" * 100)
-
-    fit_params = {
-        'early_stopping_rounds': 100,
-        'verbose_eval': 0
-    }
+    best_iterations = []
 
     def _fit_predict(X_train, y_train, X_valid, y_valid):
         dtrain = xgb.DMatrix(X_train, label=y_train)
         dvalid = xgb.DMatrix(X_valid, label=y_valid)
-        pruning_callback = optuna.integration.XGBoostPruningCallback(
-            trial, observation_key="validation-auc"
-        )
         bst = xgb.train(
-            param_grid, dtrain, evals=[(dvalid, "validation")],
-            callbacks=[pruning_callback], **fit_params
+            param_grid, dtrain, num_boost_round=n_estimators_max,
+            evals=[(dvalid, "validation")], early_stopping_rounds=early_stopping_rounds,
+            verbose_eval=False,
         )
-        return bst.predict(dtrain), bst.predict(dvalid)
+        best_iterations.append(bst.best_iteration + 1)
+        rounds = (0, bst.best_iteration + 1)
+        return bst.predict(dtrain, iteration_range=rounds), bst.predict(dvalid, iteration_range=rounds)
 
-    return _cv_score_with_overfit_guard(_fit_predict, X, y, metric, tol, n_splits)
+    score = _cv_score_with_overfit_guard(_fit_predict, X, y, metric, tol, n_splits, random_state, trial=trial)
+    trial.set_user_attr("n_estimators", int(np.mean(best_iterations)))
+    return score
 
 def optuna_optimizer_cat_classifier(
     trial,
@@ -405,8 +361,7 @@ def optuna_optimizer_cat_classifier(
     Function to optimize hyperparameter searching with OPTUNA - CatBoost.
     """
 
-    with open("schemas/param_grid.json", 'r', encoding='utf-8') as file:
-        param_dict = json.load(file)["cat"]
+    param_dict = load_param_grid("cat")
 
     param_grid = {
         'n_estimators': trial.suggest_int(
@@ -528,8 +483,7 @@ def optuna_optimizer_lgb_classifier(trial, X, y, metric='auc', tol=0.1,
     '''
     Function to optimize hyperparameter searching with OPTUNA - LightGBM
     '''
-    with open("schemas/param_grid.json", 'r', encoding='utf-8') as file:
-        param_dict = json.load(file)["lgb"]
+    param_dict = load_param_grid("lgb")
 
     param_grid = {
         'objective': param_dict["objective"],

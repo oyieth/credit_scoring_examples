@@ -1,8 +1,10 @@
-"""Step 2 - fit the preprocessing pipeline on the train split and apply it to train and holdout.
+"""Step 2 - fit the preprocessing pipeline on the train set and apply it to train and test.
 
-Reads  : models/<name>/data/{train,test}_<name>_raw.csv (from step 1b), schema/data_schema.json
+Reads  : data/application_{train,test}_all_features.csv (from step 1), schema/data_schema.json
 Writes : models/<name>/artifacts/preprocessor_<name>.joblib.dat,
          models/<name>/data/{train,test}_<name>_preprocessed.csv, encoder dict, schema/data_schema_train.json
+
+Both files need the target column: step 3 evaluates on the test set, so it must be labeled.
 """
 import argparse
 import sys
@@ -13,16 +15,22 @@ sys.path.insert(0, str(ROOT_DIR))
 
 import pandas as pd
 
-from src.model_paths import SCHEMA_DIR, SplitPaths, WritePathsPreprocess
+from src.model_paths import PIPELINE_MODEL, SCHEMA_DIR, ExtractPaths, WritePathsPreprocess
 from src.preprocessor_utils import get_preprocessor, save_preprocessed_data
 
 
 def preprocessor(model_name, target_col, other_metrics, data_schema_path):
-    split = SplitPaths(model_name)
+    paths = ExtractPaths()
     write_paths = WritePathsPreprocess(model_name)
 
-    train = pd.read_csv(split.train_raw_path)
-    test = pd.read_csv(split.test_raw_path)
+    train = pd.read_csv(paths.train_all_features_path)
+    test = pd.read_csv(paths.test_all_features_path)
+    for name, data in (("train", train), ("test", test)):
+        if target_col not in data.columns:
+            raise ValueError(
+                f"The {name} set has no `{target_col}` column. Step 3 evaluates on the test set, "
+                "so it needs labels (the original Kaggle test file has none)."
+            )
 
     # Fit on train only
     fitted, column_names = get_preprocessor(
@@ -49,7 +57,7 @@ def preprocessor(model_name, target_col, other_metrics, data_schema_path):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--model-name", default="model_00")
+    parser.add_argument("--model-name", default=PIPELINE_MODEL)
     parser.add_argument("--target", default="TARGET")
     parser.add_argument("--other-metrics", nargs="*", default=["SK_ID_CURR"],
                         help="ID / non-feature columns carried through to the output")
